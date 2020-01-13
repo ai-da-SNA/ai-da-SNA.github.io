@@ -53,6 +53,10 @@ Contributions in any of these files (including the README.md) are welcome and hi
 
 The *radar_chart_generator* folder contains the code necessary to generate radar charts for new tools evaluations.
 
+### Making TOP 5 and Tools reviews
+
+The *tools_tables_generator* folder contains the code necessary to generate the tables and tools collection review.
+
 ## TOP 5 Tools
 
 ### Total(C4) metric
