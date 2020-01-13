@@ -4,14 +4,35 @@ from typing import List
 from tabulate import tabulate
 
 
-def generate_file(file_path: str, df: pd.DataFrame, images=False, description=False):
+def generate_sotware_collection(df: pd.DataFrame):
     df_all = df.copy()
 
     df_all["Url"] = df_all.Url.str.replace("\n", "")
 
-    if images:
-        # <img width="460" src="images/grafo-con-comunidades-semanticas.png">
-        df_all["Chart"] = "<img width=\"460\" src=\"images/" + df_all["Name"] + ".png\">"
+    # <img width="460" src="images/grafo-con-comunidades-semanticas.png">
+    df_all["Chart"] = "<p align=\"center\"><img width=\"460\" src=\"images/" + df_all["Name"] + ".png\"></p>"
+
+    df_all["Url"] = "[" + df_all["Name"] + "](" + df_all["Url"] + ")"
+    df_all = df_all.rename(columns={"Url": "Tool"})
+
+    with open("all_tools.txt", "w") as f:
+        for i, row in df_all.iterrows():
+            # header
+            f.write("### {0}.{1}\n".format(i, row["Name"]))
+            # chart
+            f.write(row["Chart"] + "\n")
+            # description
+            f.write(row["Description"] + "\n")
+            # table
+            df_row = df_all[i:i+1]
+            f.write(tabulate(df_row[["Tool", "Pattern and Knowledge discovery", "Information Fusion", "Scalability", "Visualization", "Total (C4)"]], tablefmt="github", headers="keys"))
+            f.write("\n")
+
+
+def prepare_df(df: pd.DataFrame, description=False):
+    df_all = df.copy()
+
+    df_all["Url"] = df_all.Url.str.replace("\n", "")
 
     if not description:
         del df_all["Description"]
@@ -20,9 +41,7 @@ def generate_file(file_path: str, df: pd.DataFrame, images=False, description=Fa
     del df_all["Url"]
 
     df_all = df_all.rename(columns={"Name": "Tool"})
-
-    with open(file_path, "w") as f:
-        f.write(tabulate(df_all, tablefmt="github", headers="keys"))
+    return df_all
 
 
 def funtionality(in_file: str):
@@ -30,7 +49,7 @@ def funtionality(in_file: str):
         df = pd.read_csv(in_file)
 
         # Table all
-        generate_file("all_tools.txt", df, True, True)
+        generate_sotware_collection(df)
 
         # Tops 5
         dimensions = ["Total (C4)", "Pattern and Knowledge discovery", "Information Fusion", "Scalability", "Visualization"]
@@ -39,7 +58,10 @@ def funtionality(in_file: str):
         for dim, f_name in zip(dimensions, files):
             df_sort = df.sort_values([dim], ascending=False)
             df_sort = df_sort[0:5]
-            generate_file(f_name, df_sort[["Name", "Url", "Description", dim]])
+            df_sort = prepare_df(df_sort[["Name", "Url", "Description", dim]])
+
+            with open(f_name, "w"):
+                tabulate(df_sort, tablefmt="github", headers="keys")
 
     except KeyboardInterrupt:
         print("Keyboard interruption...")
