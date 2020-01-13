@@ -63,51 +63,51 @@ The *tools_tables_generator* folder contains the code necessary to generate the 
 
 |    | Tool                          |   Total (C4) |
 |----|-------------------------------|--------------|
-|  4 | [PyGraphistry](#PyGraphistry) |     0.666667 |
-| 14 | [Neo4j](#Neo4j)               |     0.573889 |
-|  3 | [ORA-LITE](#ORA-LITE)         |     0.560119 |
-|  1 | [NetMiner](#NetMiner)         |     0.519853 |
-|  5 | [Cytoscape](#Cytoscape)       |     0.394082 |
+|  4 | [pygraphistry](#pygraphistry) |     0.666667 |
+| 14 | [neo4j](#neo4j)               |     0.573889 |
+|  3 | [ora-lite](#ora-lite)         |     0.560119 |
+|  1 | [netminer](#netminer)         |     0.519853 |
+|  5 | [cytoscape](#cytoscape)       |     0.394082 |
 
 ### Top Pattern and Knowledge discovery
 
 |    | Tool                    |   Pattern and Knowledge discovery |
 |----|-------------------------|-----------------------------------|
-|  3 | [ORA-LITE](#ORA-LITE)   |                          0.844286 |
-| 18 | [SNAP](#SNAP)           |                          0.667143 |
-|  5 | [Cytoscape](#Cytoscape) |                          0.666667 |
-|  1 | [NetMiner](#NetMiner)   |                          0.654762 |
-|  8 | [NetworkX](#NetworkX)   |                          0.524286 |
+|  3 | [ora-lite](#ora-lite)   |                          0.844286 |
+| 18 | [snap](#snap)           |                          0.667143 |
+|  5 | [cytoscape](#cytoscape) |                          0.666667 |
+|  1 | [netminer](#netminer)   |                          0.654762 |
+|  8 | [networkx](#networkx)   |                          0.524286 |
 
 ### Top Information Fusion and integration
 
 |    | Tool                                    |   Information Fusion |
 |----|-----------------------------------------|----------------------|
-|  4 | [PyGraphistry](#PyGraphistry)           |             1        |
-|  1 | [NetMiner](#NetMiner)                   |             0.888889 |
-|  2 | [Network workbench](#Network-workbench) |             0.666667 |
-|  3 | [ORA-LITE](#ORA-LITE)                   |             0.666667 |
-| 11 | [Pajek](#Pajek)                         |             0.555556 |
+|  4 | [pygraphistry](#pygraphistry)           |             1        |
+|  1 | [netminer](#netminer)                   |             0.888889 |
+|  2 | [network workbench](#network-workbench) |             0.666667 |
+|  3 | [ora-lite](#ora-lite)                   |             0.666667 |
+| 11 | [pajek](#pajek)                         |             0.555556 |
 
 ### Top Scalability
 
 |    | Tool                                        |   Scalability |
 |----|---------------------------------------------|---------------|
-|  4 | [PyGraphistry](#PyGraphistry)               |      1        |
-| 14 | [Neo4j](#Neo4j)                             |      1        |
-| 12 | [AllegroGraph](#AllegroGraph)               |      1        |
-| 15 | [Sparkling Graph](#Sparkling-Graph)         |      0.916667 |
-| 13 | [GraphX Apache Spark](#GraphX-Apache-Spark) |      0.916667 |
+|  4 | [pygraphistry](#pygraphistry)               |      1        |
+| 14 | [neo4j](#neo4j)                             |      1        |
+| 12 | [allegrograph](#allegrograph)               |      1        |
+| 15 | [sparkling graph](#sparkling-graph)         |      0.916667 |
+| 13 | [graphx apache spark](#graphx-apache-spark) |      0.916667 |
 
 ### Top Visualization
 
 |    | Tool                          |   Visualization |
 |----|-------------------------------|-----------------|
-|  3 | [ORA-LITE](#ORA-LITE)         |        1        |
-|  4 | [PyGraphistry](#PyGraphistry) |        1        |
-| 14 | [Neo4j](#Neo4j)               |        1        |
-|  5 | [Cytoscape](#Cytoscape)       |        0.928571 |
-|  6 | [Gephi](#Gephi)               |        0.928571 |
+|  3 | [ora-lite](#ora-lite)         |        1        |
+|  4 | [pygraphistry](#pygraphistry) |        1        |
+| 14 | [neo4j](#neo4j)               |        1        |
+|  5 | [cytoscape](#cytoscape)       |        0.928571 |
+|  6 | [gephi](#gephi)               |        0.928571 |
 
 ## Complete Software Collection
 

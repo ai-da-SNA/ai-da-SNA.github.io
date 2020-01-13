@@ -37,6 +37,7 @@ def prepare_df(df: pd.DataFrame, description=False):
     df_all = df.copy()
 
     df_all["Url"] = df_all.Url.str.replace("\n", "")
+    df_all["Name"] = df_all.Name.str.lower()
 
     if not description:
         del df_all["Description"]
