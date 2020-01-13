@@ -57,53 +57,53 @@ The *radar_chart_generator* folder contains the code necessary to generate radar
 
 ### Total(C4) metric
 
-|    | Tool                                                  |   Total (C4) |
-|----|-------------------------------------------------------|--------------|
-|  4 | [PyGraphistry](https://www.graphistry.com/)           |     0.666667 |
-| 14 | [Neo4j](https://neo4j.com/)                           |     0.573889 |
-|  3 | [ORA-LITE](http://netanomics.com)                     |     0.560119 |
-|  1 | [NetMiner](http://www.netminer.com/main/main-read.do) |     0.519853 |
-|  5 | [Cytoscape](https://cytoscape.org/)                   |     0.394082 |
+|    | Tool                          |   Total (C4) |
+|----|-------------------------------|--------------|
+|  4 | [PyGraphistry](#PyGraphistry) |     0.666667 |
+| 14 | [Neo4j](#Neo4j)               |     0.573889 |
+|  3 | [ORA-LITE](#ORA-LITE)         |     0.560119 |
+|  1 | [NetMiner](#NetMiner)         |     0.519853 |
+|  5 | [Cytoscape](#Cytoscape)       |     0.394082 |
 
 ### Top Pattern and Knowledge discovery
 
-|    | Tool                                                  |   Pattern and Knowledge discovery |
-|----|-------------------------------------------------------|-----------------------------------|
-|  3 | [ORA-LITE](http://netanomics.com)                     |                          0.844286 |
-| 18 | [SNAP](http://snap.stanford.edu/snap/index.html)      |                          0.667143 |
-|  5 | [Cytoscape](https://cytoscape.org/)                   |                          0.666667 |
-|  1 | [NetMiner](http://www.netminer.com/main/main-read.do) |                          0.654762 |
-|  8 | [NetworkX](http://networkx.github.io/)                |                          0.524286 |
+|    | Tool                    |   Pattern and Knowledge discovery |
+|----|-------------------------|-----------------------------------|
+|  3 | [ORA-LITE](#ORA-LITE)   |                          0.844286 |
+| 18 | [SNAP](#SNAP)           |                          0.667143 |
+|  5 | [Cytoscape](#Cytoscape) |                          0.666667 |
+|  1 | [NetMiner](#NetMiner)   |                          0.654762 |
+|  8 | [NetworkX](#NetworkX)   |                          0.524286 |
 
 ### Top Information Fusion and integration
 
-|    | Tool                                                  |   Information Fusion |
-|----|-------------------------------------------------------|----------------------|
-|  4 | [PyGraphistry](https://www.graphistry.com/)           |             1        |
-|  1 | [NetMiner](http://www.netminer.com/main/main-read.do) |             0.888889 |
-|  2 | [Network workbench](http://nwb.cns.iu.edu/)           |             0.666667 |
-|  3 | [ORA-LITE](http://netanomics.com)                     |             0.666667 |
-| 11 | [Pajek](http://mrvar.fdv.uni-lj.si/pajek/)            |             0.555556 |
+|    | Tool                                    |   Information Fusion |
+|----|-----------------------------------------|----------------------|
+|  4 | [PyGraphistry](#PyGraphistry)           |             1        |
+|  1 | [NetMiner](#NetMiner)                   |             0.888889 |
+|  2 | [Network workbench](#Network-workbench) |             0.666667 |
+|  3 | [ORA-LITE](#ORA-LITE)                   |             0.666667 |
+| 11 | [Pajek](#Pajek)                         |             0.555556 |
 
 ### Top Scalability
 
-|    | Tool                                                    |   Scalability |
-|----|---------------------------------------------------------|---------------|
-|  4 | [PyGraphistry](https://www.graphistry.com/)             |      1        |
-| 14 | [Neo4j](https://neo4j.com/)                             |      1        |
-| 12 | [AllegroGraph](https://franz.com/agraph/allegrograph/)  |      1        |
-| 15 | [Sparkling Graph](https://sparkling-graph.github.io/)   |      0.916667 |
-| 13 | [GraphX Apache Spark](https://spark.apache.org/graphx/) |      0.916667 |
+|    | Tool                                        |   Scalability |
+|----|---------------------------------------------|---------------|
+|  4 | [PyGraphistry](#PyGraphistry)               |      1        |
+| 14 | [Neo4j](#Neo4j)                             |      1        |
+| 12 | [AllegroGraph](#AllegroGraph)               |      1        |
+| 15 | [Sparkling Graph](#Sparkling-Graph)         |      0.916667 |
+| 13 | [GraphX Apache Spark](#GraphX-Apache-Spark) |      0.916667 |
 
 ### Top Visualization
 
-|    | Tool                                        |   Visualization |
-|----|---------------------------------------------|-----------------|
-|  3 | [ORA-LITE](http://netanomics.com)           |        1        |
-|  4 | [PyGraphistry](https://www.graphistry.com/) |        1        |
-| 14 | [Neo4j](https://neo4j.com/)                 |        1        |
-|  5 | [Cytoscape](https://cytoscape.org/)         |        0.928571 |
-|  6 | [Gephi](https://gephi.org/)                 |        0.928571 |
+|    | Tool                          |   Visualization |
+|----|-------------------------------|-----------------|
+|  3 | [ORA-LITE](#ORA-LITE)         |        1        |
+|  4 | [PyGraphistry](#PyGraphistry) |        1        |
+| 14 | [Neo4j](#Neo4j)               |        1        |
+|  5 | [Cytoscape](#Cytoscape)       |        0.928571 |
+|  6 | [Gephi](#Gephi)               |        0.928571 |
 
 ## Complete Software Collection
 

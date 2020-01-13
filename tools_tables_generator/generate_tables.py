@@ -18,7 +18,7 @@ def generate_sotware_collection(df: pd.DataFrame):
     with open("all_tools.txt", "w") as f:
         for i, row in df_all.iterrows():
             # header
-            f.write("### {0}.{1}\n".format(i, row["Name"]))
+            f.write("### {0}\n".format(row["Name"]))
             f.write("\n")
             # chart
             f.write(row["Chart"] + "\n")
@@ -41,7 +41,7 @@ def prepare_df(df: pd.DataFrame, description=False):
     if not description:
         del df_all["Description"]
 
-    df_all["Name"] = "[" + df_all["Name"] + "](" + df_all["Url"] + ")"
+    df_all["Name"] = "[" + df_all["Name"] + "](#" + df_all["Name"].str.replace(" ","-") + ")"
     del df_all["Url"]
 
     df_all = df_all.rename(columns={"Name": "Tool"})
@@ -64,8 +64,8 @@ def funtionality(in_file: str):
             df_sort = df_sort[0:5]
             df_sort = prepare_df(df_sort[["Name", "Url", "Description", dim]])
 
-            with open(f_name, "w"):
-                tabulate(df_sort, tablefmt="github", headers="keys")
+            with open(f_name, "w") as f:
+                f.write(tabulate(df_sort, tablefmt="github", headers="keys"))
 
     except KeyboardInterrupt:
         print("Keyboard interruption...")
