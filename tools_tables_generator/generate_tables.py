@@ -19,13 +19,17 @@ def generate_sotware_collection(df: pd.DataFrame):
         for i, row in df_all.iterrows():
             # header
             f.write("### {0}.{1}\n".format(i, row["Name"]))
+            f.write("\n")
             # chart
             f.write(row["Chart"] + "\n")
+            f.write("\n")
             # description
             f.write(row["Description"] + "\n")
+            f.write("\n")
             # table
             df_row = df_all[i:i+1]
             f.write(tabulate(df_row[["Tool", "Pattern and Knowledge discovery", "Information Fusion", "Scalability", "Visualization", "Total (C4)"]], tablefmt="github", headers="keys"))
+            f.write("\n")
             f.write("\n")
 
 
