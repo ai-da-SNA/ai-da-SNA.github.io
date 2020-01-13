@@ -10,15 +10,15 @@ def generate_file(file_path: str, df: pd.DataFrame, images=False, description=Fa
     df_all["Url"] = df_all.Url.str.replace("\n", "")
 
     if images:
-        df_all["Chart"] = "![" + df_all["Name"] + "](images/" + df_all["Name"] + ".png)"
+        # <img width="460" src="images/grafo-con-comunidades-semanticas.png">
+        df_all["Chart"] = "<img width=\"460\" src=\"images/" + df_all["Name"] + ".png\">"
 
-    if description:
-        df_all["Name"] = "[" + df_all["Name"] + "](" + df_all["Url"] + ")" + df_all["Description"]
-    else:
-        df_all["Name"] = "[" + df_all["Name"] + "](" + df_all["Url"] + ")"
+    if not description:
+        del df_all["Description"]
 
+    df_all["Name"] = "[" + df_all["Name"] + "](" + df_all["Url"] + ")"
     del df_all["Url"]
-    del df_all["Description"]
+
     df_all = df_all.rename(columns={"Name": "Tool"})
 
     with open(file_path, "w") as f:
