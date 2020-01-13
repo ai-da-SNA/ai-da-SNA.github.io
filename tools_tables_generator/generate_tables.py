@@ -10,7 +10,7 @@ def generate_file(file_path: str, df: pd.DataFrame, images=False, description=Fa
     df_all["Url"] = df_all.Url.str.replace("\n", "")
 
     if images:
-        df_all["Chart"] = "[" + df_all["Name"] + "](images/" + df_all["Name"] + ".png)"
+        df_all["Chart"] = "![" + df_all["Name"] + "](images/" + df_all["Name"] + ".png)"
 
     if description:
         df_all["Name"] = "[" + df_all["Name"] + "](" + df_all["Url"] + ")" + df_all["Description"]
