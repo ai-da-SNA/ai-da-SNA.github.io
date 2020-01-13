@@ -12,7 +12,8 @@ A collection of detailed quantitative analyses on SNA frameworks and tools. The 
 
 1. [The Four Dimensions of SNA](#the-four-dimensions-of-sna)  
 2. [How to collaborate](#how-to-collaborate)
-3. [Software Collection](#software-collection)
+3. [TOPs 5 Tools](#top-5-tools)
+4. [Software Collection](#software-collection)
 
 ## The Four Dimensions of SNA
 
