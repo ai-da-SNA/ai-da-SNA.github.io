@@ -107,7 +107,7 @@ The *radar_chart_generator* folder contains the code necessary to generate radar
 
 ## Complete Software Collection
 
-### 0.UCINET
+### UCINET
 
 <p align="center"><img width="460" src="images/UCINET.png"></p>
 
@@ -117,7 +117,7 @@ UCINET: is a software package for the analysis of social network data. t comes w
 |----|-------------------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  0 | [UCINET](https://sites.google.com/site/ucinetsoftware/home) |                          0.440476 |             0.333333 |      0.414167 |        0.557143 |      0.19026 |
 
-### 1.NetMiner
+### NetMiner
 
 <p align="center"><img width="460" src="images/NetMiner.png"></p>
 
@@ -127,7 +127,7 @@ NetMiner: an premium software tool for Exploratory Analysis and Visualization of
 |----|-------------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  1 | [NetMiner](http://www.netminer.com/main/main-read.do) |                          0.654762 |             0.888889 |      0.665833 |        0.685714 |     0.519853 |
 
-### 2.Network workbench
+### Network workbench
 
 <p align="center"><img width="460" src="images/Network workbench.png"></p>
 
@@ -137,7 +137,7 @@ Network workbench: Network Workbench: A Large-Scale Network Analysis, Modeling a
 |----|---------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  2 | [Network workbench](http://nwb.cns.iu.edu/) |                          0.332857 |             0.666667 |      0.330833 |        0.857143 |     0.252834 |
 
-### 3.ORA-LITE
+### ORA-LITE
 
 <p align="center"><img width="460" src="images/ORA-LITE.png"></p>
 
@@ -147,7 +147,7 @@ ORA-LITE: is a dynamic meta-network assessment and analysis tool. It contains hu
 |----|-----------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  3 | [ORA-LITE](http://netanomics.com) |                          0.844286 |             0.666667 |           0.5 |               1 |     0.560119 |
 
-### 4.PyGraphistry
+### PyGraphistry
 
 <p align="center"><img width="460" src="images/PyGraphistry.png"></p>
 
@@ -157,7 +157,7 @@ PyGraphistry is a Python visual graph analytics library to extract, transform, a
 |----|---------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  4 | [PyGraphistry](https://www.graphistry.com/) |                          0.333333 |                    1 |             1 |               1 |     0.666667 |
 
-### 5.Cytoscape
+### Cytoscape
 
 <p align="center"><img width="460" src="images/Cytoscape.png"></p>
 
@@ -167,7 +167,7 @@ Cytoscape : a software platform for computational biology and bioinformatics, us
 |----|-------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  5 | [Cytoscape](https://cytoscape.org/) |                          0.666667 |             0.333333 |        0.5825 |        0.928571 |     0.394082 |
 
-### 6.Gephi
+### Gephi
 
 <p align="center"><img width="460" src="images/Gephi.png"></p>
 
@@ -177,7 +177,7 @@ Gephi : it's a powerful open-source solution for graph visualization. The larger
 |----|-----------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  6 | [Gephi](https://gephi.org/) |                          0.345238 |             0.444444 |      0.664167 |        0.928571 |     0.346482 |
 
-### 7.Graphviz
+### Graphviz
 
 <p align="center"><img width="460" src="images/Graphviz.png"></p>
 
@@ -187,7 +187,7 @@ GraphViz: is open source graph visualization software.
 |----|---------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  7 | [Graphviz](https://www.graphviz.org/) |                          0.097619 |             0.333333 |      0.499167 |             0.7 |      0.15417 |
 
-### 8.NetworkX
+### NetworkX
 
 <p align="center"><img width="460" src="images/NetworkX.png"></p>
 
@@ -197,7 +197,7 @@ NetworkX : a Python language software package for the creation, manipulation, an
 |----|----------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  8 | [NetworkX](http://networkx.github.io/) |                          0.524286 |             0.444444 |        0.5825 |               0 |     0.122976 |
 
-### 9.Prefuse
+### Prefuse
 
 <p align="center"><img width="460" src="images/Prefuse.png"></p>
 
@@ -207,7 +207,7 @@ Prefuse es un toolkit basado en Java para la creación interactiva de aplicacion
 |----|--------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 |  9 | [Prefuse](https://es.wikipedia.org/wiki/Prefuse) |                                 0 |             0.444444 |      0.583333 |        0.857143 |     0.189815 |
 
-### 10.JUNG
+### JUNG
 
 <p align="center"><img width="460" src="images/JUNG.png"></p>
 
@@ -217,7 +217,7 @@ JUNG — the Java Universal Network/Graph Framework--is a software library that 
 |----|--------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 | 10 | [JUNG](http://jung.sourceforge.net/) |                          0.411905 |             0.333333 |          0.75 |        0.642857 |      0.28356 |
 
-### 11.Pajek
+### Pajek
 
 <p align="center"><img width="460" src="images/Pajek.png"></p>
 
@@ -227,7 +227,7 @@ Pajek --- provide tools for analysis and visualization of such networks: collabo
 |----|--------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 | 11 | [Pajek](http://mrvar.fdv.uni-lj.si/pajek/) |                          0.475714 |             0.555556 |        0.4975 |            0.73 |      0.31278 |
 
-### 12.AllegroGraph
+### AllegroGraph
 
 <p align="center"><img width="460" src="images/AllegroGraph.png"></p>
 
@@ -237,7 +237,7 @@ AllegroGraph  --- is an ultra scalable, high-performance, and transactional Sema
 |----|--------------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 | 12 | [AllegroGraph](https://franz.com/agraph/allegrograph/) |                          0.214286 |             0.333333 |             1 |               0 |      0.10119 |
 
-### 13.GraphX Apache Spark
+### GraphX Apache Spark
 
 <p align="center"><img width="460" src="images/GraphX Apache Spark.png"></p>
 
@@ -247,7 +247,7 @@ GraphX Apache Spark --- module to perform graph-related parallel computation.
 |----|---------------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 | 13 | [GraphX Apache Spark](https://spark.apache.org/graphx/) |                              0.15 |             0.444444 |      0.916667 |               0 |     0.118519 |
 
-### 14.Neo4j
+### Neo4j
 
 <p align="center"><img width="460" src="images/Neo4j.png"></p>
 
@@ -257,7 +257,7 @@ Neo4j - Open source, scalable graph database
 |----|-----------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 | 14 | [Neo4j](https://neo4j.com/) |                          0.475714 |             0.555556 |             1 |               1 |     0.573889 |
 
-### 15.Sparkling Graph
+### Sparkling Graph
 
 <p align="center"><img width="460" src="images/Sparkling Graph.png"></p>
 
@@ -267,7 +267,7 @@ SparklingGraph --- Cross-platform tool to perform large-scale, distributed netwo
 |----|-------------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 | 15 | [Sparkling Graph](https://sparkling-graph.github.io/) |                          0.404762 |             0.444444 |      0.916667 |               0 |     0.146825 |
 
-### 16.igraph
+### igraph
 
 <p align="center"><img width="460" src="images/igraph.png"></p>
 
@@ -277,7 +277,7 @@ igraph --- a collection of network analysis tools with the emphasis on efficienc
 |----|-------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 | 16 | [igraph](https://igraph.org/) |                          0.333333 |             0.333333 |          0.75 |        0.357143 |     0.187004 |
 
-### 17.Circulo
+### Circulo
 
 <p align="center"><img width="460" src="images/Circulo.png"></p>
 
@@ -287,7 +287,7 @@ Circulo --- a "Community Detection" Evaluation Framework written primarily in Py
 |----|--------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 | 17 | [Circulo](http://lab41.github.io/Circulo/) |                          0.380952 |             0.333333 |          0.75 |        0.357143 |     0.195224 |
 
-### 18.SNAP
+### SNAP
 
 <p align="center"><img width="460" src="images/SNAP.png"></p>
 
@@ -297,7 +297,7 @@ Stanford Network Analysis Platform (SNAP) --- a general purpose, high performanc
 |----|--------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
 | 18 | [SNAP](http://snap.stanford.edu/snap/index.html) |                          0.667143 |             0.444444 |      0.750833 |               0 |     0.157553 |
 
-### 19.GUESS
+### GUESS
 
 <p align="center"><img width="460" src="images/GUESS.png"></p>
 
