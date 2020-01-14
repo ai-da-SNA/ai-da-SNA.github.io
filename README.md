@@ -27,7 +27,7 @@ In order to do a quantitative assessment of the tools four dimension have been d
 
 * **What can I show?** Finally, this last question was explored using the *Visualization* dimension, although there exist a large number of information visualization, and tools that provide flexible methods to visualize the information, this is still an open problem in the area.
 
-For a complete description of the 4 dimension please refer to:
+For a complete description of the 4 SNA dimensions please refer to:
 
 > To be published soon ...
 
