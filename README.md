@@ -4,9 +4,11 @@
   <img width="460" src="images/grafo-con-comunidades-semanticas.png">
 </p>
 
-## SNA software tools
+# The Four Dimensions of Social Network Analysis: An overview of research methods, applications, and software tools
 
-A collection of detailed quantitative analyses on SNA frameworks and tools. The aim of this collection is to help newcomers selecting the most adequate technology for their goals and fostering new research in those dimensions where exists room for improvement.
+Social network-based applications has experienced an exponential growth in recent years. One of the reasons for this rise, is that this application domain offers a particularly fertile place to test and develop the most advanced computational techniques to extract valuable information. The amount of tools, technique and framework for doing Social Network Analysis (SNA) have grown exponential in recent years and finding the most suited tool for your project is not always easy. This repository provides a quantitative analysis of a set of popular SNA tools and frameworks that we hope will help software engineers, SNA researchers, and any other SNA practitioners, selecting the best and most adequate technology for their goals, and fostering new research in those dimensions where our analysis have detected that there exists room for improvement.
+
+This collection contains a detailed quantitative analysis on 20 SNA frameworks and tools, which are extensively used by the research community. In order to do that, we have defined four different dimensions: *Pattern \& Knowledge discovery*, *Information Fusion \& Integration*,  *Scalability*, and *Visualization*. Using these dimensions, a set of new metrics (named *degrees*) is defined, to later evaluate the different SNA-software tools and frameworks, providing a global overview on the current state of the art regarding SNA technologies.
 
 ##### Table of Contents  
 
