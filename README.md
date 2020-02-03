@@ -4,11 +4,11 @@
   <img width="460" src="images/grafo-con-comunidades-semanticas.png">
 </p>
 
-# The Four Dimensions of Social Network Analysis: An overview of research methods, applications, and software tools
+# An overview of Social Network Analysis software tools
 
-Social network-based applications has experienced an exponential growth in recent years. One of the reasons for this rise, is that this application domain offers a particularly fertile place to test and develop the most advanced computational techniques to extract valuable information. The amount of tools, technique and framework for doing Social Network Analysis (SNA) have grown exponential in recent years and finding the most suited tool for your project is not always easy. This repository provides a quantitative analysis of a set of popular SNA tools and frameworks that we hope will help software engineers, SNA researchers, and any other SNA practitioners, selecting the best and most adequate technology for their goals, and fostering new research in those dimensions where our analysis have detected that there exists room for improvement.
+This repository provides a quantitative analysis of a set of popular Social Networks Analysis (SNA) tools and frameworks that we hope will help software engineers, SNA researchers, and any other SNA practitioners, selecting the best and most adequate technology for their goals, and fostering new research in those dimensions where our analysis have detected that there exists room for improvement. To do a quantitative analysis, we have defined four different dimensions: *Pattern \& Knowledge discovery*, *Information Fusion \& Integration*,  *Scalability*, and *Visualization*. Using these dimensions, a set of new metrics (named *degrees*) is proposed, to later evaluate the different SNA-software tools and frameworks, providing a global overview on the current state of the art regarding SNA technologies.
 
-This collection contains a detailed quantitative analysis on 20 SNA frameworks and tools, which are extensively used by the research community. In order to do that, we have defined four different dimensions: *Pattern \& Knowledge discovery*, *Information Fusion \& Integration*,  *Scalability*, and *Visualization*. Using these dimensions, a set of new metrics (named *degrees*) is defined, to later evaluate the different SNA-software tools and frameworks, providing a global overview on the current state of the art regarding SNA technologies.
+The aforementioned metrics will be briefly describe in the Section [The Four Dimensions of SNA](#the-four-dimensions-of-sna). A thorough description, along with a revision of the state of the art of SNA, is available in the scientific article **”The Four Dimensions of Social Network Analysis: An Overview of Research Methods, Applications, and Software Tools”**. Nevertheless, a summary of it is available in this repository on the *paper_summary.pdf* file.
 
 ##### Table of Contents  
 
@@ -19,23 +19,76 @@ This collection contains a detailed quantitative analysis on 20 SNA frameworks a
 
 ## The Four Dimensions of SNA
 
-In order to do a quantitative assessment of the tools four dimension have been defined: **Pattern and Knowledge discovery**, **Information Fusion and integration**, **Scalability**, and **Visualization**.
+The area of SNA research generates thousand of papers per year, hundred of different algorithms, tools, and frameworks, to tackle the challenges and open issues related to Online Social Networks (OSNs). Keeping track of all theses advances is difficult for both experts and new comers. To lower this burden, we propose four new ”SNA-Dimensions”. The concept is inspired by the popular V-models used in the Big Data area, and its goal is to measure the capacity (and maturity) of the different frameworks and tools available to perform SNA tasks. These dimensions are used to define a set of metrics (that we named *degrees*), that will allow any researcher to identify the technology readiness level, and the main challenges and trends in the area of SNA. The dimensions defined will be directly related to **Pattern & Knowledge discovery**, **Information Fusion & Integration**, **Scalability**, and **Visualization** research topics.
 
-* **What can I discover?** This question is related to the different types of knowledge that the tool is able to extract. The goal of this question is to quantify the capacity of the tool to extract valuable knowledge from the data. To answer this question, the dimension *Pattern and Knowledge discovery* has been considered.
+### Pattern & Knowledge discovery
 
-* **What is the limit?** Answering this question the community will understand the scalability of the tool. This question is quite important due to the amount of data that can be extracted from social networks. This question has been addressed through the *Scalability* dimension.
+This is the most classic and studied characteristic in OSNs and is related to the *Value* dimension in the V-models. This first dimension will be used to define the capacity of knowledge discovery (mainly from a pattern mining perspective) of SNA technologies. This dimension tries to answer the question: *What can I learn?*, understood as the capacity to discover non-trivial knowledge from OSN. Its objective  is to evaluate, any type of technique, method, or tool, which is used to discover new knowledge in OSN. The main functionalities for discovering knowledge which can be embedded in SNA tools can be summarized in:
 
-* **What kind of data can I integrate?** This relevant question, related to the capacity to integrate and fusion information from current SNA technologies, has been analysed through the *Information Fusion and Integration* dimension.
+* Qualitative and quantitative/statistical analysis *(F Value(1,i))*:
+  * computation of measures based on the topology *(F Value(1,1))*
+  * link analysis *(F Value(1,2))*
+* Pattern mining methods *(F Value(2,i))*:
+  * community detection *(F Value(2,1))*
+  * opinion mining *(F Value(2,2))*
+  * homophily Models *(F Value(2,3)*
+* Predictive analysis *(F Value(3,i))*:
+  * propagation and virality modeling *(F Value(3,1))*
+  * link prediction *(F Value(3,2))*.
 
-* **What can I show?** Finally, this last question was explored using the *Visualization* dimension, although there exist a large number of information visualization, and tools that provide flexible methods to visualize the information, this is still an open problem in the area.
+<p align="center"><img width="660" src="images/pattern_eq.gif"></p>
 
-For a complete description of the 4 SNA dimensions please refer to:
+where alpha, beta and gamma are equal to 1/3.
 
-> To be published soon ...
+### Scalability
+
+This dimension will be used to define, and quantify, the scalability capacity of a tool or technique (e.g., algorithm) used in an OSN and is related to the *Volume* dimension on the V-models. A highly scalable software would work correctly on a small dataset as well as working well on a very large dataset (say millions, or billions of nodes and edges), so it will try to answer the question *“What is the limit?"*. The following sets of measures are proposed to quantify the degree of volume (dVolumne (t)), or scalability, for a SNA tool:
+
+* Space-Time scalability *(F Volume1)*
+* Parallelism scalability *(F Volume2)*
+* Functional scalability *(F Volume3)*
+* Heterogeneous-Integration scalability *(F Volume4)*
+
+<p align="center"><img width="360" src="images/scalability_eq.gif"></p>
+
+
+### Information Fusion & Integration
+
+This dimension tries to answer the question: *“What kind of data can I integrate?""*. This measure would be equivalent to the concept of *Variety* on the V-models. In the case of OSN, this dimension will measure different aspects regarding the data used to perform the SNA tasks. We have defined three different measurements that will be taken into account:
+
+* Multichannel *(F var1)*: the number of different types of data analyzed.
+* Multimodality *(F var2)*: the number of different OSNs used to extract the data.
+* Multi-representation *(F var3)*: the representation model used for the data.
+
+<p align="center"><img width="340" src="images/variety_eq.gif"></p>
+
+### Visualization
+
+The concept of visualization is used as a dimension to measure the capacity of the tools, frameworks, and methods to visually represent the information stored in the network, and is related to the homonymous dimension in the V-models. Hence, this dimension will be used to answer the research question *“What can I saw?"*. We have decided to remove any aspect not related to graphics from the visualization dimension which moves away from the approaches used in the literature. Two main characteristic are used to evaluate this dimensions:
+
+*  Visual Variables *(F VisVar)*: Different visual tools available to represent data: Position, Size, Shape, Orientation, Colour, Saturation and Texture.
+
+* Interaction *(F Inter)*: Different actions available to change the visualization: Zoom, Filter, Highlight, Grouping, and Multiview.
+
+<p align="center"><img width="640" src="images/vis_eq.gif"></p>
+
+with alpha and beta equals to 1/2
+
+### Global metric
+
+Finally, and considering these SNA degrees it is quite straightforward to define a new global metric, which we have called *Capability*, and represents the overall power of a tool to work with OSN sources. The Capability is calculated as the area contained in the irregular polygon defined by the 4 dimensions described in the previous sections. This general metric can be used to better understand the capability of a particular SNA technology, and can be used to provide a ranking between any SNA software considered.
+
+The equation below defines the Capability and comes from the Shoelace formula, also known as Gauss’s area formula and the surveyor’s formula, and it is a simple formula for finding the area of a polygon given the coordinates of its vertices.
+
+<p align="center"><img width="640" src="images/capability_eq.gif"></p>
 
 ### Disclaimer
 
 We need to make a reflection on the dimensions and metrics proposed. What is proposed here is an initial work, derived from an intense dedication to the area of social network analysis in the last ten years. These dimensions, and the defined metrics (or degrees), cannot (and should not) be considered as the only ones that can be defined, even the definition cannot be considered as complete. From the analysis of the state of the art, we have selected those more relevant (from our perspective) features that could be used to better identify and reflect the state of these technologies. It is quite probable, that some highly relevant characteristics have not been considered by authors.
+
+For a complete description of the 4 SNA dimensions please refer to:
+
+> To be published soon ...
 
 ## How to collaborate
 
@@ -48,6 +101,7 @@ We would like to encourage the community to provide its own evaluations, of both
 * **blank_tools_template.ods** Blank template with all the candidate tools to be fill as desired.
 * **analized_tools_all.ods** All the candidate tools, evaluated and not-evaluated ones.
 * **README.md** the awesome page you are reading right now.
+* **paper_summary.pdf** a short summary of the paper *"The Four Dimensions of Social Network Analysis: An Overview of Research Methods, Applications, and Software Tools"* where the 4 dimensions are defined.
 
 Contributions in any of these files (including the README.md) are welcome and highly appreciated, please fill free to collaborate or contact us at *david.camacho@upm.es*
 
@@ -61,7 +115,15 @@ The *tools_tables_generator* folder contains the code necessary to generate the 
 
 ## TOP 5 Tools
 
-### Total(C4) metric
+### Understanding the analysis
+
+The evaluation process for each software was carried out as follows: once the initial set of tools was selected, the authors agreed an evaluation rubric (Available on this repository) to assess the SNA-software. This rubric is based on the analysis of the software documentation, their official websites (or any related site that could store relevant information), and other published works that provide technical details about these tools. From this technical documentation, we assess each of the characteristics that form the different SNA degrees, to finally obtain a quantitative value for each of the proposed dimensions. The features used in this rubric (strictly) follows the characteristics proposed to measure the four dimensions, so from these features we can obtain a quantitative value for each degree.
+
+Finally, to better compare the scores obtained in the different dimensions, the distribution of each of the dimensions is shown below.
+
+<p align="center"><img width="440" src="images/boxplot_dims.png"></p>
+
+### Capability metric
 
 |    | Tool                          |   Total (C4) |
 |----|-------------------------------|--------------|
@@ -117,7 +179,7 @@ The *tools_tables_generator* folder contains the code necessary to generate the 
 
 <p align="center"><img width="460" src="images/UCINET.png"></p>
 
-UCINET: is a software package for the analysis of social network data. t comes with the NetDraw network visualization tool.
+UCINET: is a software package for the analysis of social network data. It comes with the NetDraw network visualization tool.
 
 |    | Tool                                                        |   Pattern and Knowledge discovery |   Information Fusion |   Scalability |   Visualization |   Total (C4) |
 |----|-------------------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
@@ -127,7 +189,7 @@ UCINET: is a software package for the analysis of social network data. t comes w
 
 <p align="center"><img width="460" src="images/NetMiner.png"></p>
 
-NetMiner: an premium software tool for Exploratory Analysis and Visualization of Network Data.
+NetMiner: a premium software tool for Exploratory Analysis and Visualization of Network Data.
 
 |    | Tool                                                  |   Pattern and Knowledge discovery |   Information Fusion |   Scalability |   Visualization |   Total (C4) |
 |----|-------------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
@@ -137,7 +199,7 @@ NetMiner: an premium software tool for Exploratory Analysis and Visualization of
 
 <p align="center"><img width="460" src="images/Network workbench.png"></p>
 
-Network workbench: Network Workbench: A Large-Scale Network Analysis, Modeling and Visualization Toolkit for Biomedical, Social Science and Physics Research
+Network workbench: A Large-Scale Network Analysis, Modeling and Visualization Toolkit for Biomedical, Social Science and Physics Research
 
 |    | Tool                                        |   Pattern and Knowledge discovery |   Information Fusion |   Scalability |   Visualization |   Total (C4) |
 |----|---------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
@@ -157,7 +219,7 @@ ORA-LITE: is a dynamic meta-network assessment and analysis tool. It contains hu
 
 <p align="center"><img width="460" src="images/PyGraphistry.png"></p>
 
-PyGraphistry is a Python visual graph analytics library to extract, transform, and load big graphs into Graphistry's visual graph analytics platform. We layout graphs with a descendant of the gorgeous ForceAtlas2 layout algorithm introduced in Gephi. parce que corre en GPUs en su servidor.
+PyGraphistry is a Python visual graph analytics library to extract, transform, and load big graphs into Graphistry's visual graph analytics platform. We layout graphs with a descendant of the gorgeous ForceAtlas2 layout algorithm introduced in Gephi.
 
 |    | Tool                                        |   Pattern and Knowledge discovery |   Information Fusion |   Scalability |   Visualization |   Total (C4) |
 |----|---------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
@@ -177,7 +239,7 @@ Cytoscape : a software platform for computational biology and bioinformatics, us
 
 <p align="center"><img width="460" src="images/Gephi.png"></p>
 
-Gephi : it's a powerful open-source solution for graph visualization. The larger datasets tend to have a hair-ball look and are hard to understand via Gephi. (300000 y 1000000 edges)
+Gephi : it's a powerful open-source solution for graph visualization.
 
 |    | Tool                        |   Pattern and Knowledge discovery |   Information Fusion |   Scalability |   Visualization |   Total (C4) |
 |----|-----------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
@@ -207,7 +269,7 @@ NetworkX : a Python language software package for the creation, manipulation, an
 
 <p align="center"><img width="460" src="images/Prefuse.png"></p>
 
-Prefuse es un toolkit basado en Java para la creación interactiva de aplicaciones de visualización de la información. (no solo para grafos, también tablas y árboles)
+Prefuse is a Java-based toolkit for the interactive creation of information visualization applications. (not only for graphs, but also tables and trees)
 
 |    | Tool                                             |   Pattern and Knowledge discovery |   Information Fusion |   Scalability |   Visualization |   Total (C4) |
 |----|--------------------------------------------------|-----------------------------------|----------------------|---------------|-----------------|--------------|
