@@ -36,7 +36,7 @@ This is the most classic and studied characteristic in OSNs and is related to th
   * propagation and virality modeling *(F Value(3,1))*
   * link prediction *(F Value(3,2))*.
 
-<p align="center"><img width="660" src="images/pattern_eq.gif"></p>
+<p align="center"><img width="660" src="images/pattern_eq.png"></p>
 
 where alpha, beta and gamma are equal to 1/3.
 
@@ -49,7 +49,7 @@ This dimension will be used to define, and quantify, the scalability capacity of
 * Functional scalability *(F Volume3)*
 * Heterogeneous-Integration scalability *(F Volume4)*
 
-<p align="center"><img width="360" src="images/scalability_eq.gif"></p>
+<p align="center"><img width="260" src="images/scalability_eq.png"></p>
 
 
 ### Information Fusion & Integration
@@ -60,7 +60,7 @@ This dimension tries to answer the question: *“What kind of data can I integra
 * Multimodality *(F var2)*: the number of different OSNs used to extract the data.
 * Multi-representation *(F var3)*: the representation model used for the data.
 
-<p align="center"><img width="340" src="images/variety_eq.gif"></p>
+<p align="center"><img width="250" src="images/variety_eq.png"></p>
 
 ### Visualization
 
@@ -70,9 +70,13 @@ The concept of visualization is used as a dimension to measure the capacity of t
 
 * Interaction *(F Inter)*: Different actions available to change the visualization: Zoom, Filter, Highlight, Grouping, and Multiview.
 
-<p align="center"><img width="640" src="images/vis_eq.gif"></p>
+<p align="center"><img width="460" src="images/vis_eq.png"></p>
 
 with alpha and beta equals to 1/2
+
+### Summary table
+
+<p align="center"><img width="640" src="images/metrics_table.png"></p>
 
 ### Global metric
 
@@ -80,7 +84,7 @@ Finally, and considering these SNA degrees it is quite straightforward to define
 
 The equation below defines the Capability and comes from the Shoelace formula, also known as Gauss’s area formula and the surveyor’s formula, and it is a simple formula for finding the area of a polygon given the coordinates of its vertices.
 
-<p align="center"><img width="640" src="images/capability_eq.gif"></p>
+<p align="center"><img width="640" src="images/capability_eq.png"></p>
 
 ### Disclaimer
 
